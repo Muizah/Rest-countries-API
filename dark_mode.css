@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #262531;
+}
+
+.wrapper {
+  padding: 40px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 30px;
+  padding: 20px 25px;
+  position: relative;
+  background-color: #343346;
+  color: white;
+}
+
+.regions {
+  position: absolute;
+  background: #343346;
+  width: 100%;
+  list-style: none;
+  top: 60px;
+  left: 0;
+  padding: 20px 25px;
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+}
+
+.close-region {
+  display: flex;
+}
+
+.searchbox {
+  width: 320px;
+  position: relative;
+  display: flex;
+  background-color: #343346;
+  box-shadow: 0px 0px 9px 0px #302f3f;
+}
+
+.searchbox .searchbtn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+  background-color: #343346;
+  color: white;
+}
+
+.searchbox .input_search {
+  outline: none;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  background: #343346;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 36px;
+  column-gap: 30px;
+  padding: 15px 70px;
+  background-color: #262531;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+}
+
+.card {
+  background-color: #343346;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: #343346;
+}
+
+.moon {
+  display: flex;
+  color: white;
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 20px 30px;
+}
+
+.pop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  margin-top: 10px;
+}
+
+.world {
+  color: white;
+}
+
+@media (min-width: 375px) and (max-width: 800px) {
+}
