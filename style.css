@@ -151,3 +151,10 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.card:hover {
+  background: rgba(54, 54, 54, 0.3);
+  color: white;
+  transition: background 1.5s linear 1s;
+  transition: color 0.5s ease-in-out 0.5s;
+}
